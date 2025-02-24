@@ -4,6 +4,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Barlow Semi Condensed", serif;
+  background-color : hsl(214, 17%, 92%);
 }
 main {
   max-width: 1000px;
