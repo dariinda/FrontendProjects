@@ -33,10 +33,13 @@
           <li>And much more!</li>
         </ul>
         <div>
-          <div>Email address</div>
-          <input type="email" placeholder="email@company.com" />
+          <div class="mailTest">
+            <div class="mail">Email address</div>
+            <div id="errorText" hidden>Valid email required</div>
+          </div>
+          <input type="email" placeholder="email@company.com" id="mailInput" oninput="hideErrorText()"/>
         </div>
-        <button>Subscribe to monthly newsletter</button>
+        <button onclick="validateEmail()">Subscribe to monthly newsletter</button>
       </div>
       <div class="imageArea">
         <img src="illustration-sign-up-desktop.svg" alt="" />
