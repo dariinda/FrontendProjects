@@ -46,16 +46,15 @@
       </div>
     </main>
 
-    <!-- Success message start -->
-
-    <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-    <!-- Success message end -->
+    <div id="thanksCard">
+      <div class="cardImageContainer">
+        <img src="icon-success.svg" alt="">
+      </div>
+      <h1 class="cardHeading">Thanks for subscribing!</h1>
+      <div class="cardText">A confirmation email has been sent to <span id="mailShown">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.</div>
+      <button id="mainPage" onclick="toMailShown()">Dismiss Message</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
