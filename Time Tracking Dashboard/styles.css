@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  background-color: hsl(226, 43%, 10%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  max-width: 900px;
+  width: 100%;
+  gap: 20px;
+}
+.profile {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.profile-info {
+  padding: 20px;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+.profile img {
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.profile p {
+  color: hsl(236, 100%, 87%);
+  font-weight: 100;
+  font-size: small;
+}
+.profile h1 {
+  font-weight: 300;
+}
+.profile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+  padding: 20px;
+  gap: 10px;
+}
+.profile-menu button {
+  background: none;
+  border: none;
+  color: hsl(236, 100%, 87%);
+  cursor: pointer;
+  font-size: medium;
+}
+.profile-menu button:hover,
+.profile-menu button:active {
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+.card-bg {
+  height: 35px;
+  border-radius: 15px 15px 0 0;
+}
+.card-work {
+  background-color: hsl(15, 100%, 70%);
+}
+.card-play {
+  background-color: hsl(195, 74%, 62%);
+}
+.card-study {
+  background-color: hsl(348, 100%, 68%);
+}
+.card-excercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.card-social {
+  background-color: hsl(264, 64%, 52%);
+}
+.card-self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+.card-content {
+  border-radius: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+}
+.card-heading-design{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card h2 {
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card .curr-time {
+  font-weight: 200;
+  font-size: xxx-large;
+}
+.card .last-time {
+  font-weight: 300;
+  font-size: small;
+}
