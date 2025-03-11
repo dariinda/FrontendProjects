@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+}
+main {
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  min-width: 270px;
+}
+.bill input{
+  border-color:hsl(183, 100%, 15%) ;
+}
+.input-part {
+  width: 100%;
+  padding: 20px;
+}
+.input-img {
+  display: flex;
+  background-color: hsl(189, 41%, 97%);
+  align-items: center;
+}
+.input-img img {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+}
+.bill p {
+  padding-bottom: 5px;
+}
+.input-part input {
+  background-color: hsl(189, 41%, 97%);
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  font-size: medium;
+  width: 100%;
+  text-align: right;
+}
+.tip-percent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: row;
+  gap: 10px;
+}
+
+.input-part button {
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: large;
+  font-family: inherit;
+  cursor: pointer;
+}
+.input-part button:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+
+.bill {
+  padding-bottom: 20px;
+}
+
+.tip-select {
+  padding-bottom: 20px;
+}
+.tip-select p {
+  padding-bottom: 10px;
+}
+
+.tip-part {
+  width: 100%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+.tip-pair-value {
+  display: flex;
+  justify-content: space-between;
+}
+.total-people p {
+  padding-bottom: 5px;
+}
+.tip-part button {
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: hsl(183, 100%, 15%);
+  font-weight: 600;
+  cursor: pointer;
+}
+.tip-part button:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+.tip-pair-value {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.total-tip span,
+.tip-amount span {
+  font-size: small;
+  color: hsl(186, 14%, 43%);
+  font-weight: 600;
+}
+.amount-number {
+  color: hsl(172, 67%, 45%);
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+@media screen and (max-width: 600px) {
+
+  main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .input-part {
+    width: 100%;
+  }
+  .tip-part {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+    main{
+        width: 50%;
+    }
+  .tip-pair-value {
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+  }
+  .tip-pair-value .amount-number {
+    font-size: x-large;
+  }
+}
