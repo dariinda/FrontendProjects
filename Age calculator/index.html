@@ -11,46 +11,90 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Age calculator app</title>
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet" />
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body class="bg-violet-400 flex justify-center items-center min-h-screen px-4" style="font-family: 'Poppins', sans-serif;">
-    <main class="bg-white w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl p-8 sm:p-10 rounded-2xl rounded-br-[120px] overflow-hidden shadow-2xl">
-      
+  <body
+    class="bg-violet-400 flex justify-center items-center min-h-screen px-4"
+    style="font-family: 'Poppins', sans-serif"
+  >
+    <main
+      class="bg-white w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl p-8 sm:p-10 rounded-2xl rounded-br-[120px] overflow-hidden shadow-2xl"
+    >
       <!-- Input Fields -->
-      <div class="flex flex-wrap sm:flex-nowrap justify-start gap-5 w-full p-3" style="font-weight: 500;">
+      <div
+        class="flex flex-wrap sm:flex-nowrap justify-start gap-5 w-full p-3"
+        style="font-weight: 500"
+      >
         <div class="flex flex-col w-full sm:w-auto">
           <label for="day" class="text-sm sm:text-base">DAY</label>
-          <input type="number" placeholder="DD" class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]" style="font-weight: 700;" id="day"/>
-          <div class=" italic text-xs p-1 text-red-500" id="dayErrorMessage"></div>
+          <input
+            type="number"
+            placeholder="DD"
+            class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]"
+            style="font-weight: 700"
+            id="day"
+          />
+          <div
+            class="italic text-xs p-1 text-red-500"
+            id="dayErrorMessage"
+          ></div>
         </div>
         <div class="flex flex-col w-full sm:w-auto">
           <label for="month" class="text-sm sm:text-base">MONTH</label>
-          <input type="number" placeholder="MM" class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]" style="font-weight: 700;" id="month"/>
-          <div class="italic text-xs p-1 text-red-500" id="monthErrorMessage"></div>
+          <input
+            type="number"
+            placeholder="MM"
+            class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]"
+            style="font-weight: 700"
+            id="month"
+          />
+          <div
+            class="italic text-xs p-1 text-red-500"
+            id="monthErrorMessage"
+          ></div>
         </div>
-        
+
         <div class="flex flex-col w-full sm:w-auto">
           <label for="year" class="text-sm sm:text-base">YEAR</label>
-          <input type="number" placeholder="YYYY" class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]" style="font-weight: 700;" id="year"/>
-          <div class="italic text-xs p-1 text-red-500" id="yearErrorMessage"></div>
+          <input
+            type="number"
+            placeholder="YYYY"
+            class="p-3 border rounded-2xl focus:border-violet-500 focus:border-2 focus:outline-none text-xl sm:text-2xl w-full sm:w-[130px]"
+            style="font-weight: 700"
+            id="year"
+          />
+          <div
+            class="italic text-xs p-1 text-red-500"
+            id="yearErrorMessage"
+          ></div>
         </div>
       </div>
-  
+
       <!-- Divider with Button -->
       <div class="relative flex items-center gap-5 my-12 sm:my-2">
-        <hr class="w-full border-gray-300">
-        <div class="bg-violet-600 rounded-full p-3.5 cursor-pointer absolute left-1/2 -translate-x-1/2 sm:relative sm:left-auto sm:translate-x-0 hover:bg-black" id="button">
-          <img class="w-8 sm:w-10 h-8 sm:h-10" src="assets/images/icon-arrow.svg" alt="Arrow">
+        <hr class="w-full border-gray-300" />
+        <div
+          class="bg-violet-600 rounded-full p-3.5 cursor-pointer absolute left-1/2 -translate-x-1/2 sm:relative sm:left-auto sm:translate-x-0 hover:bg-black"
+          id="button"
+        >
+          <img
+            class="w-8 sm:w-10 h-8 sm:h-10"
+            src="assets/images/icon-arrow.svg"
+            alt="Arrow"
+          />
         </div>
       </div>
-  
+
       <!-- Output Age -->
-      <div class="italic space-y-4 text-left" style="font-weight: 700;">
+      <div class="italic space-y-4 text-left" style="font-weight: 700">
         <div class="flex text-5xl sm:text-7xl">
           <div class="text-violet-600" id="ageYears">--</div>
           <div class="ml-2">years</div>
@@ -64,10 +108,7 @@
           <div class="ml-2">days</div>
         </div>
       </div>
-      
-  
     </main>
     <script src="main.js"></script>
   </body>
-  
 </html>
