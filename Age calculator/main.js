@@ -24,26 +24,37 @@ button.addEventListener("click", () => {
   monthErrorMessage.textContent = "";
   yearErrorMessage.textContent = "";
   dayElement.style.border="2px "
+  dayElement.style.border = "2px solid gray";
+  monthElement.style.border = "2px solid gray";
+  yearElement.style.border = "2px solid gray";
+  document.querySelector('label[for="day"]').style.color = "black";
+  document.querySelector('label[for="month"]').style.color = "black";
+  document.querySelector('label[for="year"]').style.color = "black";
 
-  if (isNaN(day) || day <= 0) {
+  
+  let isValid = true;
+
+  if (isNaN(day) || day <= 0 || day>31) {
     dayErrorMessage.textContent = "Enter a valid day";
     dayElement.style.border="2px solid red";
     document.querySelector('label[for="day"]').style.color="red";
+    isValid=false;
   }
 
   if (isNaN(month) || month <= 0 || month > 12) {
     monthErrorMessage.textContent = "Enter a valid month";
     monthElement.style.border="2px solid red";
     document.querySelector('label[for="month"]').style.color="red";
-
+    isValid=false;
   }
 
-  if (isNaN(year) || year <= 0 || year > currYear) {
+  if (isNaN(year) || year <= 1900 || year > currYear) {
     yearErrorMessage.textContent = "Enter a valid year";
     yearElement.style.border="2px solid red";
     document.querySelector('label[for="year"]').style.color="red";
+    isValid=false;
   }
-
+  
   let ageYear = currYear - year;
   let ageMonth = currMonth - month;
   let ageDay = currDay - day;
@@ -57,7 +68,11 @@ button.addEventListener("click", () => {
     ageMonth += 12;
   }
 
-  ageYearsElement.textContent = ageYear;
-  ageMonthsElement.textContent = ageMonth;
-  ageDaysElement.textContent = ageDay;
+  if(isValid){
+    ageYearsElement.textContent = ageYear;
+    ageMonthsElement.textContent = ageMonth;
+    ageDaysElement.textContent = ageDay;
+  }
+
 });
+
