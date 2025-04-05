@@ -21,7 +21,7 @@
   </head>
   <!-- setting the background color and adding svgs to the background -->
   <body
-    class="h-screen w-screen bg-[url('/images/bg-bottom.svg'),url('/images/bg-top.svg')] bg-no-repeat bg-[position:bottom_left,top_right] bg-blue-50"
+    class="h-auto w-screen bg-[url('/images/bg-bottom.svg'),url('/images/bg-top.svg')] bg-no-repeat bg-[position:bottom_left,top_right] bg-blue-50 "
   >
     <main
       class="flex flex-col items-center justify-center min-h-screen gap-8 pb-12 font-[Montserrat] "
@@ -54,7 +54,7 @@
       </div>
 
       <!-- Price cards -->
-      <div class="flex justify-center items-center gap-8">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
         <!-- card1 -->
         <div class="p-6 flex flex-col items-center rounded-2xl border-2 border-[hsl(249,83%,72%)]">
           <div>Basic</div>
